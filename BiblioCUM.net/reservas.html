@@ -22,7 +22,7 @@
 
     <main>
         <h2>Reserva de Libros</h2>
-        <form action="procesar_reserva.php" method="post">
+        <form action="procesar_reserva.php" method="post" onsubmit="return validarFormulario()">
             <label for="libro">Seleccione un libro:</label>
             <select id="libro" name="libro">
                 <option value="Isabel Allende">Isabel Allende</option>
@@ -42,10 +42,14 @@
             <label for="dia">Seleccione un día:</label>
             <input type="date" id="dia" name="dia">
             <br>
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="###-###-####" maxlength="9" required>
+            <br>
             <label for="comentario">Comentarios</label>
             <br>
             <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
             <br>
+
             <input type="submit" value="Reservar">
         </form>
     </main>
@@ -53,6 +57,9 @@
     <footer>
         <p>&copy; 2024 BiblioCUM.net</p>
     </footer>
+
+    <script src="JS/Reserva.js"></script>
+
 </body>
 
 </html>
