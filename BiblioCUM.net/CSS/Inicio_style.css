@@ -1,0 +1,131 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #05681b;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header h1, h2{
+    padding-left: 30px;
+}
+
+main h1{
+    text-align: center;
+}
+
+#Logo{
+    width: 100px;
+    float: right;
+}
+
+.carrusel {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.imagen {
+    top: 0;
+    left: 0;
+    height: auto;
+    display: none;
+    text-align: center;
+    
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.anterior {
+    left: 10px;
+}
+
+button.siguiente {
+    right: 10px;
+}
+
+.imagen img {
+    display: inline-block;
+    max-width: 100%; 
+    height: auto;
+    width: 400px;
+    height: 300px;
+}
+
+.informacion {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+}
+
+.informacion h2 {
+    color: #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0 10px;
+}
+
+.informacion p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.novedades-contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.Novedades {
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}

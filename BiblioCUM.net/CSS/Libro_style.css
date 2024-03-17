@@ -1,0 +1,77 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #05681b;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#Logo{
+    width: 100px;
+    float: right;
+}
+
+
+/* Estilos específicos para libros */
+
+.libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.libro {
+    width: 400px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.libro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.libro h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.libro p {
+    margin: 5px 0;
+}

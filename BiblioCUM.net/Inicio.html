@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BiblioCUM.net - Biblioteca Online</title>
+    <link rel="stylesheet" href="CSS/Inicio_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BiblioCUM.net <img id="Logo" src="IMG/logo-CUMe.jpg" alt="Logo CUMe"></h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Libros.html">Libros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="#ahorcado">Ahorcado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Bienvenidos a la biblioteca online del Centro Universitario de Merida</h1>
+        <div class="carrusel">
+
+            <div class="imagen">
+                <img src="IMG/carr1.jpg" alt="Imagen 1">
+            </div>
+            <div class="imagen">
+                <img src="IMG/carr2.jpg" alt="Imagen 2">
+            </div>
+            <div class="imagen">
+                <img src="IMG/carr3.jpg" alt="Imagen 3">
+            </div>
+
+
+            <button class="anterior" onclick="cambiarImagen(-1)"> &#171; </button>
+            <button class="siguiente" onclick="cambiarImagen(1)">&#187;</button>
+        </div>
+
+        <h2>Novedades y sitios de interes</h2>
+        <div class="novedades-contenedor">
+            <div class="Novedades">
+                <a class="twitter-timeline" href="https://twitter.com/goodreads?ref_src=twsrc%5Etfw">Tweets by
+                    goodreads</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="Novedades">
+                <a class="twitter-timeline" href="https://twitter.com/BookRiot?ref_src=twsrc%5Etfw">Tweets by
+                    BookRiot</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+        <div class="informacion">
+            <h2>Información</h2>
+            <p><strong>Correo:</strong><a href="mailto:infocume@unex.es">infocume@unex.es</a></p>
+            <p><strong>Teléfono:</strong> 924 387 068</p>
+            <p><strong>Dirección:</strong> Av. Santa Teresa de Jornet, 38. 06800 Mérida</p>
+            <p><strong>Horarios:</strong> <br> Mañanas: 8:30 a 14:30 <br> Tardes: 15:30 a 21:30</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BiblioCUM.net</p>
+    </footer>
+    <script src="JS/Inicio.js"></script>
+</body>
+
+</html>

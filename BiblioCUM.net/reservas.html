@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BiblioCUM.net - Biblioteca Online</title>
+    <link rel="stylesheet" href="CSS/Reserva_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BiblioCUM.net <img id="Logo" src="IMG/logo-CUMe.jpg" alt="Logo CUMe"></h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Libros.html">Libros</a></li>
+                <li><a href="#ahorcado">Ahorcado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Reserva de Libros</h2>
+        <form action="procesar_reserva.php" method="post">
+            <label for="libro">Seleccione un libro:</label>
+            <select id="libro" name="libro">
+                <option value="Isabel Allende">Isabel Allende</option>
+                <option value="La última función">La última función</option>
+                <option value="Un hambre insaciable">Un hambre insaciable</option>
+                <option value="El ángel de la ciudad">El ángel de la ciudad</option>
+                <option value="La condesa">La condesa</option>
+                <option value="El infierno">El infierno</option>
+            </select>
+            <br>
+            <label for="horario">Seleccione un horario:</label>
+            <select id="horario" name="horario">
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+            </select>
+            <br>
+            <label for="dia">Seleccione un día:</label>
+            <input type="date" id="dia" name="dia">
+            <br>
+            <input type="submit" value="Reservar">
+        </form>
+    </main>
+</body>
+
+</html>
