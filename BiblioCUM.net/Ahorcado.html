@@ -21,7 +21,20 @@
     </header>
 
     <main>
+        <div id="ahorcado">
+            <canvas id="lienzo" width="400" height="400"></canvas>
+            <div id="palabra"></div>
+            <div id="intentos"></div>
+            <input type="text" id="letra" maxlength="1">
+            <button onclick="comprobarLetra()">Comprobar</button>
+            <button onclick="reiniciar()">Reiniciar</button>
 
+        </div>
+
+        <div id="pista">
+            <h3>Pista</h3>
+            <p id="pistaTexto">Haz clic en 'Reiniciar' para obtener una nueva pista.</p>
+        </div>
     </main>
 
 </body>
@@ -30,5 +43,7 @@
 <footer>
     <p>&copy; 2024 BiblioCUM.net</p>
 </footer>
+
+<script src="JS/Ahorcado.js"></script>
 
 </html>
