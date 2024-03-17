@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
 
 header {
@@ -40,15 +40,16 @@ footer {
 
 }
 
-header h1, h2{
+header h1,
+h2 {
     padding-left: 30px;
 }
 
-main h1{
+main h1 {
     text-align: center;
 }
 
-#Logo{
+#Logo {
     width: 100px;
     float: right;
 }
@@ -56,8 +57,13 @@ main h1{
 #pista {
     float: right;
     width: 200px;
-    height: 200px;
+    height: 250px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 10px;
-  }
+    margin-top: -200px
+}
+
+#letras-utilizadas {
+    margin-top: 20px;
+}

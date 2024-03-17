@@ -1,13 +1,14 @@
-var arrayPalabra = []; 
-var palabra; 
-var maximo = 6; 
-var numIntentos = 0; 
+var arrayPalabra = [];
+var palabra;
+var maximo = 6;
+var numIntentos = 0;
 var Acertadas = [];
+var letrasUtilizadas = [];
 var canvas = document.getElementById("lienzo");
 var ctx = canvas.getContext("2d");
 
 function cargarDiccionario() {
-    arrayPalabra = ["javascript", "programacion", "computadora", "desarrollo", "web", "tecnologia"];
+    arrayPalabra = ["javascript", "programacion", "ordenador", "desarrollo", "web", "tecnologia"];
     palabra = arrayPalabra[Math.floor(Math.random() * arrayPalabra.length)].toUpperCase();
     console.log(palabra);
     muestraPalabra();
@@ -18,25 +19,25 @@ function cambiarPista() {
     var pistaTexto = document.getElementById("pistaTexto");
     switch (palabra) {
         case "JAVASCRIPT":
-            pistaTexto.textContent = "Es un lenguaje de programación de alto nivel.";
+            pistaTexto.textContent = "Es un lenguaje de programación de alto nivel ampliamente utilizado para crear contenido interactivo en páginas web.";
             break;
         case "PROGRAMACION":
             pistaTexto.textContent = "Es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas de computadora.";
             break;
-        case "COMPUTADORA":
-            pistaTexto.textContent = "Es una máquina electrónica que recibe y procesa datos para convertirlos en información útil.";
+        case "ORDENADOR":
+            pistaTexto.textContent = "Es una máquina electrónica que procesa datos según un conjunto de instrucciones almacenadas y produce resultados de salida.";
             break;
         case "DESARROLLO":
             pistaTexto.textContent = "Es el proceso de crear un producto de software.";
             break;
         case "WEB":
-            pistaTexto.textContent = "Es un sistema de información que se accede a través de Internet.";
+            pistaTexto.textContent = "Es un sistema de información que permite acceder y compartir contenido a través de Internet.";
             break;
         case "TECNOLOGIA":
             pistaTexto.textContent = "Es el conjunto de conocimientos técnicos, ordenados científicamente, que permiten diseñar y crear bienes o servicios que facilitan la adaptación al medio y satisfacen las necesidades de las personas.";
             break;
         default:
-            pistaTexto.textContent = "JHGFDSJHASYDGFKAS";
+            pistaTexto.textContent = "Haz clic en 'Reiniciar' para obtener una nueva pista.";
             break;
     }
 }
@@ -90,6 +91,13 @@ function muestraHorca() {
 function comprobarLetra() {
     var letra = document.getElementById("letra").value.toUpperCase();
     document.getElementById("letra").value = "";
+    if (letrasUtilizadas.includes(letra)) {
+        alert("¡Ya has utilizado esa letra!");
+        return;
+    }
+    letrasUtilizadas.push(letra);
+    document.getElementById("letrasUsadas").textContent = letrasUtilizadas.join(", ");
+
     if (palabra.includes(letra)) {
         Acertadas.push(letra);
         muestraPalabra();
@@ -121,10 +129,7 @@ function muestraPalabra() {
 }
 
 function reiniciar() {
-    numIntentos = 0;
-    Acertadas = [];
-    document.getElementById("intentos").innerHTML = "Intentos restantes: " + (maximo - numIntentos);
-    cargarDiccionario();
+    location.reload();
 }
 
 
